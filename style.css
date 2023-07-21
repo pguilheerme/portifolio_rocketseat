@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Merriweather+Sans:ital,wght@0,500;0,700;1,400&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #22212C;
+    font-family:'Merriweather', sans-serif;
+    color: #837E9F;
+}
+
+a{
+    text-decoration: none;
+    color: #837E9F;
+}
+a:hover{
+    color: #CB92B1;
+}
+
+li{
+    list-style: none;
+}
+p{
+    padding: 10px;
+}
+
+/*.container*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font-size: 12pt;
+    line-height: 30px;
+    padding-top: 30px;
+}
+
+/*.info*/
+.info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 90%;
+}
+.info section{
+    border: 1px solid #302F3D;
+    background-color: #302F3D;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+/*.profile*/
+.profile{
+    text-align: center;
+}
+.profile img{
+    width: 128px;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 128px;
+    border: 2px solid #0F0;
+}
+
+/* .social*/
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.social a{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.social img{
+   margin-right: 10px;
+}
+
+/*.techs*/
+.techs ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 12px;
+    gap: 1em;
+    font-size: 8pt;
+    margin: 10px;
+}
+.techs li{
+    background-color: #CB92B1;
+    color: #22212C;
+    padding: 10px;
+    width: 75px;
+    text-align: center;
+    border-radius: 60px;
+    padding: 8px;
+}
+
+/*.experience*/
+.experience dl, .school dl{
+    padding-left: 25px;
+}
+.experience dt, .school dt{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+/*.content*/
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+    width: 90%;
+}
+.content div, li{
+    background-color: #302F3D;
+    border-radius: 20px;
+    padding: 20px;
+}
+.content div{
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 12pt;
+    margin-bottom: 10px;
+}
+.content div a{
+    padding: 30px;
+}
+
+/* .projects*/
+.projects{
+    width: 100%;
+}
+.projects ul{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+.projects ul li{
+    width: 100%;
+}
+.projects li a{
+    display: flex;
+    gap: 5px;
+    font-size: 12pt;
+}
+.projects aside{
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+}
+.projects aside span{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.projects aside strong{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+/* .posts*/
+.posts{
+    width: 100%;
+}
+.posts ul li{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin-top: 20px;
+    padding: 10px;
+    line-height: 25px;
+}
+.posts .pic img{
+    width: 128px;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 128px;
+}
+
+/* footer*/
+footer{
+    color: #8742d1;
+    text-align: center;
+    margin: 30px;
+    font-style: italic;
+    font-size: 14pt;
+}
+
+/* media*/
+@media(min-width:500px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        width: 500px;
+    }
+}
+@media(min-width:900px){
+    
+    .container{
+        width: 95%;
+        flex-flow: row;
+        align-items: flex-start;
+    }
+
+    .info{
+        flex-basis: 50%;
+    }
+
+    .projects ul{
+        width: 100%;
+        flex-flow: row wrap;
+    }
+    
+    .projects ul li{
+        width: 48%;
+    }
+}
